@@ -7,9 +7,11 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SingupComponent } from './singup/singup.component';
-import {SliderCarouselModule} from 'slider-carousel';
+// @ts-ignore
+import {SliderCarouselModule} from "slider-carousel";
 import {CarouselModule} from 'ngx-bootstrap/carousel';
 
+// noinspection AngularInvalidImportedOrDeclaredSymbol
 @NgModule({
   declarations: [
     AppComponent,
