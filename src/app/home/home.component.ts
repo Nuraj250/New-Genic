@@ -8,7 +8,7 @@ import {Router} from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  isScrolled = false;
+  // isScrolled = false;
 
   constructor(private router: Router) {
   }
@@ -16,11 +16,11 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  @HostListener('window:scroll')
-  // tslint:disable-next-line:typedef
-  scrollEvent() {
-    window.pageYOffset >= 650 ? (this.isScrolled = true) : (this.isScrolled = false);
-  }
+  // @HostListener('window:scroll')
+  // // tslint:disable-next-line:typedef
+  // scrollEvent() {
+  //   window.pageYOffset >= 650 ? (this.isScrolled = true) : (this.isScrolled = false);
+  // }
 
   test() {
     this.router.navigate(['/profile']);
