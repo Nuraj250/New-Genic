@@ -29,7 +29,7 @@ li > a {
 
 .centered {
   position: absolute;
-  top: 45%;
+  top: 34%;
   left: 10%;
   color: white;
   font-size: 35px;
@@ -37,16 +37,16 @@ li > a {
 
 .centered2 {
   position: absolute;
-  top: 60%;
+  top: 45%;
   left: 10%;
   color: white;
   font-size: 60px;
   font-family: Gilroy;
 }
 
-.btn {
+.shopnow {
   position: absolute;
-  top: 70%;
+  top: 56%;
   left: 10%;
   width: 180px;
   height: 70px;
