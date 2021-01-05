@@ -31,6 +31,6 @@ export class HomeComponent implements OnInit {
   }
 
   test() {
-    this.router.navigate(['/profile']);
+    this.router.navigate(['/product']);
   }
 }

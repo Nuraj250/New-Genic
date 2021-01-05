@@ -5,10 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { ProductComponent } from './product/product.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SingupComponent } from './singup/singup.component';
 import {SliderCarouselModule} from 'slider-carousel';
 import {CarouselModule} from 'ngx-bootstrap/carousel';
+
 
 @NgModule({
   declarations: [
@@ -16,12 +18,16 @@ import {CarouselModule} from 'ngx-bootstrap/carousel';
     HomeComponent,
     LoginComponent,
     ProfileComponent,
-    SingupComponent
+    SingupComponent,
+    ProductComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CarouselModule.forRoot(),
+    SliderCarouselModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

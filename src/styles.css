@@ -3,3 +3,6 @@
 @import "~mdbootstrap/css/bootstrap.css";
 @import '~slider-carousel/slider-carousel.scss';
 /*@include slider-carousel();*/
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

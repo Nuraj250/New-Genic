@@ -1,12 +1,13 @@
 .navbar {
-  /*margin: 35px;*/
-  /*left: 110px;*/
+  position: absolute;
+  top: 0;
   height: auto;
   width: 100%;
   padding-right: 250px;
-  padding-top: 25px;
-  background: black;
-  /*border: 1px solid transparent;*/
+  padding-top: 45px;
+  background: #252525;
+  color: black;
+  z-index: 200;
 }
 
 .navbar-inverse {
@@ -19,10 +20,9 @@
 }
 
 li > a {
-  margin: auto;
-  top: -15px;
-  left: 470px;
-  padding: 25px;
+  margin: 0;
+  left: 500px;
+  padding: 10px 25px 25px 25px ;
   color: white;
   font-size: 17px;
 }
@@ -62,10 +62,10 @@ li > a {
 }
 
 .flip-card {
-  width: 260px;
-  height: 380px;
-  border: 2px solid black;
+  width: 280px;
+  height: 400px;
 }
+
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -73,7 +73,6 @@ li > a {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .flip-card:hover .flip-card-inner {
@@ -84,7 +83,6 @@ li > a {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -99,11 +97,73 @@ li > a {
   transform: rotateY(180deg);
 }
 
+.col-item {
+  top: 2000px;
+  border-radius: 5px;
+  background: #FFF;
+
+}
+
+.col-item .photo img {
+  margin: 0;
+  width: 100%;
+}
+
+.col-item .price {
+  /*width: 50%;*/
+  float: left;
+  margin-top: 5px;
+}
+
+.col-item .separator {
+  border-top: 1px solid #E1E1E1;
+}
+
+.col-item .separator p {
+  line-height: 20px;
+  margin-bottom: 0;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.col-item .separator p i {
+  margin-right: 5px;
+}
+
+.col-item .btn-add {
+  width: 50%;
+  float: left;
+}
+
+.col-item .btn-add {
+  border-right: 1px solid #E1E1E1;
+}
+
+.col-item .btn-details {
+  width: 50%;
+  float: left;
+  padding-left: 10px;
+}
+
+.col-item:hover {
+  border: 1px solid black;
+}
+
+.controls {
+  margin-top: 120px;
+  width: 100px;
+  height: 100px;
+}
+
+[data-slide="prev"] {
+  margin-right: 10px;
+}
+
 .p-2 {
   width: 100%;
-  height: 820px;
+  height: 100%;
   background-color: black;
-  color: white;
+  color: #a6a6a6;
   position: absolute;
   top: 1400px;
 }
@@ -112,26 +172,82 @@ li > a {
   font-size: 30px;
   position: absolute;
   top: 50px;
-  left: 580px;
+  left: 450px;
   font-family: Roboto, monospace;
 
 }
-.p-2 > header>span{
+
+.p-2 > header > span {
   font-family: 'Audiowide';
   font-size: 60px;
 }
+
+.p-1 {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  top: 2200px;
+}
+
 .p-1 > header {
   font-size: 30px;
   position: absolute;
-  top: 50px;
-  left: 580px;
+  top: 5px;
+  left: 650px;
   font-family: Roboto, monospace;
 
 }
+.h33{
+  position: absolute;
+  top:65px;
+  left: 15px;
+  width:100%;
+  padding-right: 0;
+}
+.col{
+  padding: 0;
+}
+/*.ratings i {*/
+/*  font-size: 16px;*/
+/*  color: red*/
+/*}*/
+
+/*.strike-text {*/
+/*  color: red;*/
+/*  text-decoration: line-through*/
+/*}*/
+
+/*.product-image {*/
+/*  width: 100%*/
+/*}*/
+
+/*.dot {*/
+/*  height: 7px;*/
+/*  width: 7px;*/
+/*  margin-left: 6px;*/
+/*  margin-right: 6px;*/
+/*  margin-top: 3px;*/
+/*  background-color: blue;*/
+/*  border-radius: 50%;*/
+/*  display: inline-block*/
+/*}*/
+
+/*.spec-1 {*/
+/*  color: #938787;*/
+/*  font-size: 15px*/
+/*}*/
+
+/*h5 {*/
+/*  font-weight: 400*/
+/*}*/
+
+/*.para {*/
+/*  font-size: 16px*/
+/*}*/
 
 .p-3 {
   width: 100%;
-  height: 500px;
+  height: 250px;
   color: white;
   position: absolute;
   top: 3400px;
@@ -139,16 +255,17 @@ li > a {
 
 .card1 {
   width: 510px;
-  height: 500px;
-  border: 1px solid black;
+  height: 300px;
+  border: 3px solid black;
 }
 
 .p-4 {
   width: 100%;
-  height: 800px;
+  height: 80%;
   color: white;
   position: absolute;
-  top: 3900px;
+  top: 372px;
+  /*background-color: cyan;*/
 }
 
 .p-5 {
@@ -157,6 +274,164 @@ li > a {
   background-color: black;
   color: white;
   position: absolute;
-  top: 4700px;
+  top: 4300px;
 }
 
+h6 {
+  position: absolute;
+  bottom: 80px;
+  left: 80px;
+  font-size: 40px;
+  color: black;
+}
+
+.product-grid6, .product-grid6 .product-image6 {
+  overflow: hidden
+}
+
+.product-grid6 {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  position: relative;
+  transition: all .5s ease 0s
+}
+
+.product-grid6:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, .3)
+}
+
+.product-grid6 .product-image6 a {
+  display: block
+}
+
+.product-grid6 .product-image6 img {
+  width: 100%;
+  height: auto;
+  transition: all .5s ease 0s
+}
+
+.product-grid6:hover .product-image6 img {
+  transform: scale(1.1)
+}
+
+.product-grid6 .product-content {
+  padding: 12px 12px 15px;
+  transition: all .5s ease 0s
+}
+
+.product-grid6:hover .product-content {
+  opacity: 0
+}
+
+.product-grid6 .title {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 0 0 10px;
+  transition: all .3s ease 0s
+}
+
+.product-grid6 .title a {
+  color: #000
+}
+
+.product-grid6 .title a:hover {
+  color: #2e86de
+}
+
+.product-grid6 .price {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2e86de
+}
+
+.product-grid6 .price span {
+  color: #999;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: line-through;
+  margin-left: 7px;
+  display: inline-block
+}
+
+.product-grid6 .social {
+  background-color: #fff;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  opacity: 0;
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+  z-index: 1;
+  transition: all .5s ease 0s
+}
+
+.product-grid6:hover .social {
+  opacity: 1;
+  bottom: 20px
+}
+
+.product-grid6 .social li {
+  display: inline-block
+}
+
+.product-grid6 .social li a {
+  color: black;
+  font-size: 16px;
+  line-height: 45px;
+  text-align: center;
+  height: 45px;
+  width: 45px;
+  margin: 0 7px;
+  border: 1px solid #909090;
+  border-radius: 50px;
+  display: block;
+  position: relative;
+  transition: all .3s ease-in-out
+}
+
+.product-grid6 .social li a:hover {
+  color: black;
+  background-color: #2e86de;
+  width: 80px
+}
+
+.product-grid6 .social li a:after, .product-grid6 .social li a:before {
+  content: attr(data-tip);
+  color: black;
+  background-color: #2e86de;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  padding: 1px 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  top: -30px
+}
+
+.product-grid6 .social li a:after {
+  content: '';
+  height: 15px;
+  width: 15px;
+  border-radius: 0;
+  transform: translateX(-50%) rotate(45deg);
+  top: -20px;
+  z-index: -1
+}
+
+.product-grid6 .social li a:hover:after, .product-grid6 .social li a:hover:before {
+  opacity: 1
+}
+
+@media only screen and (max-width: 990px) {
+  .product-grid6 {
+    margin-bottom: 30px
+  }
+}
