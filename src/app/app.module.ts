@@ -10,6 +10,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { SingupComponent } from './singup/singup.component';
 import {SliderCarouselModule} from 'slider-carousel';
 import {CarouselModule} from 'ngx-bootstrap/carousel';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import {CarouselModule} from 'ngx-bootstrap/carousel';
     LoginComponent,
     ProfileComponent,
     SingupComponent,
-    ProductComponent
+    ProductComponent,
+    FooterComponent,
+    HeaderComponent
 
   ],
   imports: [

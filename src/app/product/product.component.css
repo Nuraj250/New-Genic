@@ -41,8 +41,10 @@ li > a {
 
 .o-1 {
   background-color: chartreuse;
-  width: 20%;
-  height: auto;
+  width: 305px;
+  height: 100%;
+  position: static;
+  left: 0;
 }
 
 .p-1 {
