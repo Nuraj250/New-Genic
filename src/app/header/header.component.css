@@ -1,0 +1,28 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  height: auto;
+  width: 100%;
+  padding-right: 250px;
+  padding-top: 45px;
+  background: rgba(0,0,0,0.46);
+  color: black;
+  z-index: 200;
+}
+
+.navbar-inverse {
+  background-color: #000000;
+}
+
+.nav.navbar-nav.navbar-right {
+  left: 1170px;
+  padding-right: 25px;
+}
+
+li > a {
+  margin: 0;
+  left: 500px;
+  padding: 10px 25px 25px 25px ;
+  color: white;
+  font-size: 17px;
+}
