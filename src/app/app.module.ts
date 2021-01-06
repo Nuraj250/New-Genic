@@ -12,6 +12,7 @@ import {SliderCarouselModule} from 'slider-carousel';
 import {CarouselModule} from 'ngx-bootstrap/carousel';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { ProductDetailsComponent } from './product/product-details/product-details.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { HeaderComponent } from './header/header.component';
     SingupComponent,
     ProductComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    ProductDetailsComponent
 
   ],
   imports: [
