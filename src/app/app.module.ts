@@ -14,6 +14,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { ProductDetailsComponent } from './product/product-details/product-details.component';
 import { ProductCardComponent } from './product/product-card/product-card.component';
+import { WishlistComponent } from './list/wishlist/wishlist.component';
+import { CartComponent } from './list/cart/cart.component';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { ProductCardComponent } from './product/product-card/product-card.compon
     FooterComponent,
     HeaderComponent,
     ProductDetailsComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    WishlistComponent,
+    CartComponent
 
   ],
   imports: [
