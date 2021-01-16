@@ -16,6 +16,9 @@ import { ProductDetailsComponent } from './product/product-details/product-detai
 import { ProductCardComponent } from './product/product-card/product-card.component';
 import { WishlistComponent } from './list/wishlist/wishlist.component';
 import { CartComponent } from './list/cart/cart.component';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+// import {MatPaginatorModule} from '@angular/material/paginator';
+// import {ReactiveFormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -39,6 +42,9 @@ import { CartComponent } from './list/cart/cart.component';
     AppRoutingModule,
     CarouselModule.forRoot(),
     SliderCarouselModule,
+    HttpClientModule
+    // MatPaginatorModule,
+    // ReactiveFormsModule
 
   ],
   providers: [],

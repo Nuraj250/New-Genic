@@ -1,7 +1,7 @@
 .h33 {
   position: absolute;
-  top:0;
-  left: 15px;
+  top:100px;
+  left: 270px;
   width: 100%;
   padding-right: 0;
 }
@@ -10,14 +10,13 @@
   padding: 0;
 }
 
-.p-1 {
-  width: 80%;
-  height: 100%;
-  position: absolute;
-  left: 20%;
-  top: 15%;
-}
 
+.product-grid6{
+
+  width: 250px;
+  display: inline-block;
+
+}
 .product-grid6, .product-grid6 .product-image6 {
   overflow: hidden
 }

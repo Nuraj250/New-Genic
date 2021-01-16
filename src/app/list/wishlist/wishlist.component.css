@@ -1,0 +1,143 @@
+.bloc_left_price {
+  color: #c01508;
+  text-align: center;
+  font-weight: bold;
+  font-size: 150%;
+}
+
+.category_block li:hover {
+  background-color: #007bff;
+}
+
+.category_block li:hover a {
+  color: #ffffff;
+}
+
+.category_block li a {
+  color: #343a40;
+}
+
+.add_to_cart_block .price {
+  color: #c01508;
+  text-align: center;
+  font-weight: bold;
+  font-size: 200%;
+  margin-bottom: 0;
+}
+
+.add_to_cart_block .price_discounted {
+  color: #343a40;
+  text-align: center;
+  text-decoration: line-through;
+  font-size: 140%;
+}
+
+.product_rassurance {
+  padding: 10px;
+  margin-top: 15px;
+  background: #ffffff;
+  border: 1px solid #6c757d;
+  color: #6c757d;
+}
+
+.product_rassurance .list-inline {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.product_rassurance .list-inline li:hover {
+  color: #343a40;
+}
+
+.reviews_product .fa-star {
+  color: gold;
+}
+
+.pagination {
+  margin-top: 20px;
+}
+
+tr {
+  text-align: left;
+}
+
+.qty .count {
+  color: #000;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  padding: 0 2px;
+  min-width: 25px;
+  text-align: center;
+}
+
+.qty .plus {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+  width: 30px;
+  height: 30px;
+  font: 30px/1 Arial, sans-serif;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.qty .minus {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+  width: 30px;
+  height: 30px;
+  font: 30px/1 Arial, sans-serif;
+  text-align: center;
+  border-radius: 50%;
+  background-clip: padding-box;
+}
+
+div {
+  text-align: center;
+}
+
+.minus:hover {
+  background-color: #717fe0 !important;
+}
+
+.plus:hover {
+  background-color: #717fe0 !important;
+}
+
+span {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+input {
+  border: 0;
+  width: 2%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:disabled {
+  background-color: white;
+}
+
+.divider {
+  flex-grow: 1;
+  border-bottom: 5px solid black;
+  width: 25px;
+}
+.divided {
+  display: flex;
+  align-items: center;
+}
