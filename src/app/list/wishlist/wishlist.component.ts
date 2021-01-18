@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Wishlist} from '../../storage/class/wishlist';
 
 @Component({
   selector: 'app-wishlist',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WishlistComponent implements OnInit {
 
-  constructor() { }
+  head = ['', 'Name', 'Code', 'Stock', 'Unitprice','Action'];
+  body: Wishlist[] = [{image: 'wxsxsxs', name: 'cedce', product_code: '21', stock: '42', unit_price: '144'},
+    {image: 'wxsxsxs', name: 'cedce', product_code: '21', stock: '42', unit_price: '144'}];
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
+
 
 }

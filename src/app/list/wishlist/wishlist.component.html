@@ -1,57 +1,30 @@
 <section class="text-center" style="margin-top: 120px;">
   <div class="container divided">
     <span class="divider"></span>
-    <h1 style="font-size: 40px;">WISH LIST</h1>
+    <h1 style="font-size: 40px;">WISHLIST</h1>
     <span class="divider"></span>
   </div>
 </section>
 <br><br><br><br>
-<div class="row" style="margin: 0px; height: auto">
+<div class="row" style=" width:auto; height: auto;margin-left: 150px;">
   <div class="col-12">
     <div class="table">
       <table class="table" style="font-size: 20px;">
         <thead>
         <tr>
-          <th scope="col"></th>
-          <th scope="col">Product</th>
-          <th scope="col">Code</th>
-          <th scope="col">Stock</th>
-          <th scope="col">Unit Price</th>
-          <th scope="col">Action</th>
+          <th *ngFor="let head of head" scope="col">{{head}}
+          </th>
         </tr>
         </thead>
         <tbody>
         <tr>
-          <td><img src="https://dummyimage.com/200x200/55595c/fff"/></td>
-          <td>Product Name Dada
-          <td>52345345</td>
-          <td>available</td>
-          <td>124,90 €</td>
-          <td class="text-left ">
-            <button class="btn btn-sm btn-danger" style="font-size: 30px;margin: 25px"><i class="fa fa-trash"></i>
-            </button>
-            <button class="btn btn-sm btn-danger" style="font-size: 30px;"><i class="fa fa-trash"></i></button>
-          </td>
-        </tr>
-        <tr>
-          <td><img src="https://dummyimage.com/200x200//55595c/fff"/></td>
-          <td>Product Name Toto</td>
-          <td>32752</td>
-          <td>33,90 €</td>
-          <td>33,90 €</td>
-          <td class="text-left">
-            <button class="btn btn-sm btn-danger" style="font-size: 30px;margin: 25px"><i class="fa fa-trash"></i>
-            </button>
-            <button class="btn btn-sm btn-danger" style="font-size: 30px;"><i class="fa fa-trash"></i></button>
-          </td>
-        </tr>
-        <tr>
-          <td><img src="https://dummyimage.com/200x200//55595c/fff"/></td>
-          <td>Product Name Titi</td>
-          <td>6527532</td>
-          <td>70,00 €</td>
-          <td>70,00 €</td>
-          <td class="text-left">
+        <tr *ngFor="let body of body">
+          <th scope="row">{{body.image}}</th>
+          <td>{{body.name}}</td>
+          <td>{{body.product_code}}</td>
+          <td>{{body.stock}}</td>
+          <td>{{body.unit_price}}</td>
+          <td>
             <button class="btn btn-sm btn-danger" style="font-size: 30px;margin: 25px"><i class="fa fa-trash"></i>
             </button>
             <button class="btn btn-sm btn-danger" style="font-size: 30px;"><i class="fa fa-trash"></i></button>

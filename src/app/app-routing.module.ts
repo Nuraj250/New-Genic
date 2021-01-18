@@ -9,6 +9,7 @@ import {AuthGuard} from './AuthGuard';
 import {ProductCardComponent} from './product/product-card/product-card.component';
 import {CartComponent} from './list/cart/cart.component';
 import {WishlistComponent} from './list/wishlist/wishlist.component';
+import {PaymentComponent} from './payment/payment.component';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'home'},
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'product-card', component: ProductCardComponent},
   {path: 'cart', component: CartComponent},
-  {path: 'wishlist', component: WishlistComponent}
+  {path: 'wishlist', component: WishlistComponent},
+  {path: 'payment', component: PaymentComponent}
 
 ];
 

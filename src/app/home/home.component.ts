@@ -29,14 +29,7 @@ export class HomeComponent implements OnInit {
   // // tslint:disable-next-line:typedef
   // scrollEvent() {
   //   window.pageYOffset >= 650 ? (this.isScrolled = true) : (this.isScrolled = false);
-  // userForm=new FormGroup({
-  //   username:new FormControl('',[Validators.required]),
-  //   name:new FormControl('',[Validators.required]),
-  //   date:new FormControl(''),
-  //   address: new FormGroup({
-  //     lane1:new FormControl('')
-  //   })
-  // });
+
 
   ngOnInit(): void {
   }
