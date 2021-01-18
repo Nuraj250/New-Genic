@@ -1,0 +1,27 @@
+.s1{
+  width: 60%;
+  background-color: #2e86de;
+  position: absolute;
+  top: 120px;
+}
+.s2{
+  width: 60%;
+  background-color: darkgreen;
+  position: absolute;
+  top: 270px;
+}
+.s3{
+  width: 60%;
+  background-color: firebrick;
+  position: absolute;
+  top: 420px;
+}
+.s4{
+  width: 40%;
+  height: 100%;
+  background-color: aquamarine;
+  position: absolute;
+  right: 0;
+  top: 120px;
+
+}

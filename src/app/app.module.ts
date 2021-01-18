@@ -17,6 +17,7 @@ import { ProductCardComponent } from './product/product-card/product-card.compon
 import { WishlistComponent } from './list/wishlist/wishlist.component';
 import { CartComponent } from './list/cart/cart.component';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { PaymentComponent } from './payment/payment.component';
 // import {MatPaginatorModule} from '@angular/material/paginator';
 // import {ReactiveFormsModule} from '@angular/forms';
 
@@ -34,7 +35,8 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
     ProductDetailsComponent,
     ProductCardComponent,
     WishlistComponent,
-    CartComponent
+    CartComponent,
+    PaymentComponent
 
   ],
   imports: [
