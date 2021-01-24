@@ -26,3 +26,13 @@ li > a {
   color: white;
   font-size: 17px;
 }
+.navbar-default .dropdown-menu {
+  padding: 0;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #878c94;
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+  transition: all 0.1s ease-in;
+}

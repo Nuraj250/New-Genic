@@ -1,6 +1,7 @@
 import {Component, HostListener, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {HomeService} from '../service/home.service';
+import {ProductService} from '../service/product.service';
 // import {FormArray, FormControl, FormGroup, Validators} from '@angular/forms';
 // import {Image} from '../dto/image';
 
@@ -10,6 +11,7 @@ import {HomeService} from '../service/home.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  isDisabled = false;
 
 
   imageObject: Array<object> = [{
@@ -22,7 +24,8 @@ export class HomeComponent implements OnInit {
 
   // imageObject : Image[]=[];
 
-  constructor(private router: Router, private homeService: HomeService) {
+  constructor(private router: Router, private homeService: HomeService,private  productService: ProductService) {
+
   }
 
   // @HostListener('window:scroll')
@@ -77,4 +80,15 @@ export class HomeComponent implements OnInit {
   //
   //   console.log(JSON.parse(<string> localStorage.getItem('front')));
   // }
-}
+  addToWishlist(): Promise<any> {
+    return new Promise<any>(resolve => {
+      this.productService.postWishlist().subscribe((res) => {
+        console.log(res);
+        this.isDisabled=true;
+      }, error => {
+        console.log(error);
+      });
+
+      resolve(1);
+    });
+  }}

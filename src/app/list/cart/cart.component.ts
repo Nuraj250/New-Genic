@@ -1,6 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {Cart} from '../../storage/class/cart';
+import {Router} from '@angular/router';
+import {ProductService} from '../../service/product.service';
 
 @Component({
   selector: 'app-cart',
@@ -66,10 +68,11 @@ export class CartComponent implements OnInit {
     }
   ];
 
-  constructor() {
+  constructor(private router: Router, private productService: ProductService) {
   }
 
   ngOnInit(): void {
+
   }
 
 }

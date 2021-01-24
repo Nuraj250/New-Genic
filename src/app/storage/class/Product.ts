@@ -12,7 +12,7 @@ export class Product {
   sale_price: string | undefined;
   retail_price: string | undefined;
   added_date: number | undefined;
-  image: any ;
+  image: object|undefined;
 }
 
 

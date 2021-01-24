@@ -2,37 +2,41 @@ import {environment} from '../../environments/environment.prod';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {Injectable} from '@angular/core';
+import {Product} from '../storage/class/Product';
+import {Category} from '../storage/class/Category';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
   basUrl = environment.baseUrl;
+  private _id: any;
 
   constructor(private http: HttpClient) {
   }
 
-  public getCategory(): Observable<any> {
-    return this.http.get(this.basUrl + '/category');
+  public getCategory(): Observable<Category[]> {
+    return this.http.get<Category[]>(this.basUrl + '/category');
   }
 
-  public getSubCategory(): Observable<any> {
-    return this.http.get(this.basUrl + '/category/subCategoryProducts/{subCategoryid}');
+  public getSubCategory(): Observable<Category[]> {
+    return this.http.get<Product[]> (this.basUrl + '/category/subCategoryProducts/{subCategoryid}');
   }
 
-  public getSubMainCategory(): Observable<any> {
-    return this.http.get(this.basUrl + '/category/mainSubCategoryProducts/{mainSubCategoryId}');
+  public getSubMainCategory(): Observable<Category[]>{
+    return this.http.get<Category[]>(this.basUrl + '/category/mainSubCategoryProducts/{mainSubCategoryId}');
   }
 
   // public getFilter(): Observable<any> {
   //   return this.http.get(this.basUrl + '/category/mainSubCategoryProducts/{mainSubCategoryId}');
   // }
-  public getNewArrival(): Observable<any> {
-    return this.http.get(this.basUrl + '/product/newArrivals');
+  public getNewArrival(): Observable<Product[]> {
+    return this.http.get<Product[]>(this.basUrl + '/product/newArrivals');
   }
 
-  public getProductView(): Observable<any> {
-    return this.http.get(this.basUrl + ' /product/{productId}');
+  public getProductView(id: string | undefined): Observable<Product[]> {
+    this._id = id;
+    return this.http.get<Product[]> (this.basUrl + ' /product/{productId}');
   }
 
   public getSearch(): Observable<any> {

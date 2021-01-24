@@ -9,55 +9,24 @@ import {ProductCard} from '../../storage/class/product-card';
   styleUrls: ['./product-card.component.css']
 })
 export class ProductCardComponent implements OnInit {
-  product: ProductCard[] = [];
+  product: any[] = [];
+  private id: string | undefined;
+  isDisabled = false;
+  isDisabled1=false;
+
 
   constructor(private router: Router, private  productService: ProductService) {
   }
 
   ngOnInit(): void {
-    this.product = [
-      {
-      item_id: 1,
-      image: 'http://bestjquery.com/tutorial/product-grid/demo10/images/img-2.jpg',
-      name: 'MYSHOES',
-      retail_price: 109.99,
-      sale_price: 109.99
-    },
-      {
-        item_id: 1,
-        image: 'http://bestjquery.com/tutorial/product-grid/demo10/images/img-2.jpg',
-        name: 'MYSHOES',
-        retail_price: 109.99,
-        sale_price: 109.99
-      },
-      {
-        item_id: 1,
-        image: 'http://bestjquery.com/tutorial/product-grid/demo10/images/img-2.jpg',
-        name: 'MYSHOES',
-        retail_price: 109.99,
-        sale_price: 109.99
-      },
-      {
-        item_id: 1,
-        image: 'http://bestjquery.com/tutorial/product-grid/demo10/images/img-2.jpg',
-        name: 'MYSHOES',
-        retail_price: 109.99,
-        sale_price: 109.99
-      },
-      {
-        item_id: 1,
-        image: 'http://bestjquery.com/tutorial/product-grid/demo10/images/img-2.jpg',
-        name: 'MYSHOES',
-        retail_price: 109.99,
-        sale_price: 109.99
-      },
-    ];
+    // this.product = this.productService.getProductView();
+    // this.cart = this.cartService.getCart();
   }
 
   quickView(): Promise<any> {
     return new Promise<any>(resolve => {
-      this.productService.getProductView().subscribe((res) => {
-        console.log(res);
+      this.productService.getProductView(this.id).subscribe((res) => {
+
       }, error => {
         console.log(error);
       });
@@ -70,6 +39,7 @@ export class ProductCardComponent implements OnInit {
     return new Promise<any>(resolve => {
       this.productService.postWishlist().subscribe((res) => {
         console.log(res);
+        this.isDisabled=true;
       }, error => {
         console.log(error);
       });
@@ -78,10 +48,12 @@ export class ProductCardComponent implements OnInit {
     });
   }
 
+
   addToCart(): Promise<any> {
     return new Promise<any>(resolve => {
       this.productService.postCart().subscribe((res) => {
         console.log(res);
+        this.isDisabled1=true;
       }, error => {
         console.log(error);
       });
@@ -90,3 +62,4 @@ export class ProductCardComponent implements OnInit {
     });
   }
 }
+

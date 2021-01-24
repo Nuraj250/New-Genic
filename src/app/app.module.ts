@@ -18,9 +18,10 @@ import { WishlistComponent } from './list/wishlist/wishlist.component';
 import { CartComponent } from './list/cart/cart.component';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { PaymentComponent } from './payment/payment.component';
+import {FormsModule} from '@angular/forms';
+import {MatPaginatorModule} from '@angular/material/paginator';
 import {ReactiveFormsModule} from '@angular/forms';
-// import {MatPaginatorModule} from '@angular/material/paginator';
-// import {ReactiveFormsModule} from '@angular/forms';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 
 @NgModule({
@@ -47,8 +48,9 @@ import {ReactiveFormsModule} from '@angular/forms';
     SliderCarouselModule,
     HttpClientModule,
     ReactiveFormsModule,
-    // MatPaginatorModule,
-    // ReactiveFormsModule
+    MatPaginatorModule,
+    NgxPaginationModule,
+    FormsModule
 
   ],
   providers: [],

@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Wishlist} from '../../storage/class/wishlist';
+import {Router} from '@angular/router';
+import {ProductService} from '../../service/product.service';
 
 @Component({
   selector: 'app-wishlist',
@@ -12,7 +14,7 @@ export class WishlistComponent implements OnInit {
   body: Wishlist[] = [{image: 'wxsxsxs', name: 'cedce', product_code: '21', stock: '42', unit_price: '144'},
     {image: 'wxsxsxs', name: 'cedce', product_code: '21', stock: '42', unit_price: '144'}];
 
-  constructor() {
+  constructor(private router: Router, private productService: ProductService) {
   }
 
   ngOnInit(): void {
