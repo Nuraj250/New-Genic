@@ -8,24 +8,23 @@
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav me-auto mb-1 mb-lg-0" style="position:relative;left:100px; top:-20px;margin-top: 0">
-      <li class="nav-item" [routerLink]="'/product'">
-        <a href="#">ELECTRO</a></li>
-      <li class="nav-item" [routerLink]="'/product-card'">
-        <a href="#">AUTOMOTIVE</a>
-      </li>
-      <li class="nav-item">
-        <a href="#">W & J</a>
-      </li>
-      <li class="nav-item">
-        <a href="#">HOME & TOYS</a>
-      </li>
-    </ul>
-    <form class="d-flex" style="position: absolute;top:25px; left: 800px">
-      <ul class="nav navbar-nav ">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> </a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> </a></li>
+    <div class="navbar-nav me-auto mb-1 mb-lg-0" style="position:relative;left:100px; top:-20px;margin-top: 0">
+      <ul class="nav-item" [routerLink]="'/product'"><a href="">ELECTRO</a>
       </ul>
+      <ul class="nav-item" [routerLink]=""><a href="#">AUTOMOTIVE</a>
+      </ul>
+      <ul class="nav-item"><a href="#">W & J</a>
+      </ul>
+      <ul class="nav-item dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown">HOME & TOYS</a>
+      </ul>
+
+    </div>
+    <form class="d-flex text-right" style="position: absolute;top:30px; left: 1200px">
+      <div class="nav navbar-nav ">
+        <ul><a href="#"><span class="glyphicon glyphicon-user"></span> </a></ul>
+        <ul><a href="#"><span class="glyphicon glyphicon-log-in"></span> </a></ul>
+      </div>
     </form>
   </div>
 </nav>

@@ -10,6 +10,7 @@ import {ProductCardComponent} from './product/product-card/product-card.componen
 import {CartComponent} from './list/cart/cart.component';
 import {WishlistComponent} from './list/wishlist/wishlist.component';
 import {PaymentComponent} from './payment/payment.component';
+import {SignupComponent} from './signup/signup.component';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'home'},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'product', component: ProductComponent},
   {path: 'product-details', component: ProductDetailsComponent },
   {path: 'login', component: LoginComponent},
+  {path: 'signup', component: SignupComponent },
   {path: 'product-card', component: ProductCardComponent},
   {path: 'cart', component: CartComponent},
   {path: 'wishlist', component: WishlistComponent},

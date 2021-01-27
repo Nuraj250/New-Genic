@@ -245,7 +245,6 @@
 }
 
 
-
 h6 {
   position: absolute;
   bottom: 80px;
@@ -404,3 +403,11 @@ h6 {
     margin-bottom: 30px
   }
 }
+
+.shop >button{
+  position: relative;
+  left: 110px;
+  font-size: 22px;
+  width: 140px;
+}
+

@@ -1,4 +1,4 @@
-<carousel>
+<carousel xmlns="">
   <slide>
     <img
       src="https://c0.anyrgb.com/images/13/617/elegant-timepiece-wristwatch-watch-texture-time-timepiece-strap-pattern-black-white.jpg"
@@ -53,8 +53,8 @@
         <div class="flip-card" style="position: absolute; left: 100px; top:960px;">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img  class="img-responsive" src="" alt=" "
-                    style="width:300px;height:300px;">
+              <img class="img-responsive" src="" alt=" "
+                   style="width:300px;height:300px;">
             </div>
             <div class="flip-card-back">
               <!--              <h1>John Doe</h1>-->
@@ -123,6 +123,7 @@
         <a class="right fa fa-chevron-right btn " href="#carousel-example"
            data-slide="next"
            style="width:100px; height: 60px;position:absolute;right: 650px;bottom:60px; font-size:40px;color: white"></a>
+        <input id="darkTheme" type="button" [formControl]="darkTheme"/>
       </div>
     </div>
     <div id="carousel-example" class="carousel slide hidden-xs" data-ride="carousel" style="width: 100%; ">
@@ -213,7 +214,7 @@
   <header class="text-center "> --NEW ARRIVAL--
   </header>
   <div class=" h33 row" style="width: 100%;">
-    <div class="col">
+    <div class="col-3">
       <div class="product-grid6">
         <div class="product-image6">
           <a href="#">
@@ -233,88 +234,7 @@
         </ul>
       </div>
     </div>
-    <div class="col">
-      <div class="product-grid6">
-        <div class="product-image6">
-          <a href="#">
-            <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo10/images/img-2.jpg" alt="">
-          </a>
-        </div>
-        <div class="product-content">
-          <h3 class="title"><a href="#">Women's Red Top</a></h3>
-          <div class="price">$8.00
-            <span>$12.00</span>
-          </div>
-        </div>
-        <ul class="social">
-          <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
-          <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-          <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="col">
-      <div class="product-grid6">
-        <div class="product-image6">
-          <a href="#">
-            <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo10/images/img-3.jpg" alt="">
-          </a>
-        </div>
-        <div class="product-content">
-          <h3 class="title"><a href="#">Men's Shirt</a></h3>
-          <div class="price">$11.00
-            <span>$14.00</span>
-          </div>
-        </div>
-        <ul class="social">
-          <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
-          <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-          <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="col">
-      <div class="product-grid6">
-        <div class="product-image6">
-          <a href="#">
-            <img alt="
-" class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo10/images/img-4.jpg">
-          </a>
-        </div>
-        <div class="product-content">
-          <h3 class="title"><a href="#">Men's Shirt</a></h3>
-          <div class="price">$11.00
-            <span>$14.00</span>
-          </div>
-        </div>
-        <ul class="social">
-          <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
-          <li><a href="" data-tip="Add to Wishlist" (click)="addToWishlist();" disabled="isDisabled" ><i class="fa fa-shopping-bag"></i></a></li>
-          <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="col">
-      <div class="product-grid6">
-        <div class="product-image6">
-          <a href="#">
-            <img alt="
-" class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo10/images/img-4.jpg">
-          </a>
-        </div>
-        <div class="product-content">
-          <h3 class="title"><a href="#">Men's Shirt</a></h3>
-          <div class="price">$11.00
-            <span>$14.00</span>
-          </div>
-        </div>
-        <ul class="social">
-          <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
-          <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-          <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
-        </ul>
-      </div>
-    </div>
+
   </div>
 </div>
 <div class="p-3 ">
@@ -366,9 +286,42 @@
   </div>
 </div>
 <div class="p-4 " style="color:#2e86de; font-size: 33px ">
-  <h1> ef,d,flc,dslcf,ld,cald</h1>
-</div>
+  <div class="container">
+    <div class="row">
+      <div id="carousel-example-generic" class="carousel slide hidden-xs" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="row">
+              <div class="col">
+                <div class="col-item">
+                  <div class="photo">
+                    <img src="http://placehold.it/350x350" class="img-responsive" alt="a"/>
+                  </div>
+                  <div class="shop " >
+                    <button class="btn btn-dark ">SHOP NOW</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="row">
+              <div class="col">
+                <div class="col-item">
+                  <div class="photo">
+                    <img src="http://placehold.it/350x350" class="img-responsive" alt="a"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+</div>
 <!--<button class="btn btn-primary" (click)="getAllData()">Get All</button>-->
 
 

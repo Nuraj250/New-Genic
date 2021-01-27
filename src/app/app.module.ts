@@ -7,7 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { ProductComponent } from './product/product.component';
 import { ProfileComponent } from './profile/profile.component';
-import { SingupComponent } from './singup/singup.component';
+import { SignupComponent } from './signup/signup.component';
 import {SliderCarouselModule} from 'slider-carousel';
 import {CarouselModule} from 'ngx-bootstrap/carousel';
 import { FooterComponent } from './footer/footer.component';
@@ -22,6 +22,9 @@ import {FormsModule} from '@angular/forms';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {ReactiveFormsModule} from '@angular/forms';
 import {NgxPaginationModule} from 'ngx-pagination';
+// @ts-ignore
+// import { CountdownTimerModule } from 'ngx-countdown-timer-date';
+
 
 
 @NgModule({
@@ -30,7 +33,7 @@ import {NgxPaginationModule} from 'ngx-pagination';
     HomeComponent,
     LoginComponent,
     ProfileComponent,
-    SingupComponent,
+    SignupComponent,
     ProductComponent,
     FooterComponent,
     HeaderComponent,
@@ -51,6 +54,8 @@ import {NgxPaginationModule} from 'ngx-pagination';
     MatPaginatorModule,
     NgxPaginationModule,
     FormsModule
+    // CountdownTimerModule.forRoot()
+
 
   ],
   providers: [],
