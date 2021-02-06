@@ -9,21 +9,72 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <div class="navbar-nav me-auto mb-1 mb-lg-0" style="position:relative;left:100px; top:-20px;margin-top: 0">
-      <ul class="nav-item" [routerLink]="'/product'"><a href="">ELECTRO</a>
-      </ul>
-      <ul class="nav-item" [routerLink]=""><a href="#">AUTOMOTIVE</a>
-      </ul>
-      <ul class="nav-item"><a href="#">W & J</a>
-      </ul>
-      <ul class="nav-item dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown">HOME & TOYS</a>
-      </ul>
+      <li class="nav-item dropdown" *ngFor="let category of category_list">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1"
+           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ category.name }}</a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <li class="dropdown-submenu" *ngFor="let mainsubcategory of category.main_sub_categories">
+            <a class="dropdown-item dropdown-toggle">{{mainsubcategory.name}}</a>
+            <ul class="dropdown-menu" *ngFor="let subcategory of mainsubcategory.sub_categories">
+              <li class="dropdown-submenu"><a class="dropdown-item " href="#">{{subcategory.name}}</a>
+              </li>
+              <li class="dropdown-submenu"><a class="dropdown-item " href="#">Submenu 2</a>
 
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="http://google.com">Google</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-submenu"><a class="dropdown-item " href="#">Submenu 1</a>
+              </li>
+              <li class="dropdown-submenu"><a class="dropdown-item " href="#">Submenu 2</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="http://google.com">Google</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-submenu"><a class="dropdown-item " href="#">Submenu 1</a>
+              </li>
+              <li class="dropdown-submenu"><a class="dropdown-item" href="#">Submenu 2</a>
+
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <a class="nav-lin "
+         id="navbarDropdownMenuLink5"
+         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  [routerLink]="['/gaming']">Gaming</a>
     </div>
-    <form class="d-flex text-right" style="position: absolute;top:30px; left: 1200px">
-      <div class="nav navbar-nav ">
-        <ul><a href="#"><span class="glyphicon glyphicon-user"></span> </a></ul>
-        <ul><a href="#"><span class="glyphicon glyphicon-log-in"></span> </a></ul>
+    <form class="d-flex text-right" style="position: absolute;top:30px; left: 1000px;margin-top: 5px; ">
+      <div class="nav navbar-nav nv" style="font-size: 24px;">
+        <li>
+          <div class="flexbox">
+            <div class="search">
+              <div>
+                <input type="text" placeholder="Search . . ." required>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#" style="padding-right: 10px" data-placement="top">
+          <span class="fa fa-user-circle fa-lg" title="User"></span> </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a href="#" style="padding-right: 10px">
+              <span class="glyphicon glyphicon-log-in">
+              </span> Log in</a></li>
+            <!--            <app-login id="openlogin"></app-login>-->
+          </ul>
+        </li>
+        <li><a style="padding-right: 20px"><span class="glyphicon glyphicon-shopping-cart fa-lg" title="Cart"
+                                                          [routerLink]="['/cart']"></span>
+        </a></li>
+        <li><a  style="padding-right: 20px"><span class="glyphicon glyphicon-heart fa-lg"
+                                                          title="WishList" [routerLink]="['/wishlist']"></span>
+        </a></li>
+        <li><a href="#" style="padding-right: 20px"><span class="glyphicon glyphicon-log-out fa-lg"
+                                                          title="Logout"></span>
+        </a></li>
       </div>
     </form>
   </div>

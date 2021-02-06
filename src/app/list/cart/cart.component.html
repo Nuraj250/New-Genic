@@ -5,32 +5,32 @@
 </section>
 <br>
 <div class="row" style="margin: 0px; height: auto">
-  <div class="col-sm-12">
+  <div class="col-sm-12" *ngFor="let cart of carts">
     <div class="table-responsive">
       <table class="table text-center" style="font-size: 20px;">
         <thead>
         <tr>
-          <th class="text-center" *ngFor="let head of head" scope="col" style="width: auto;">{{head}} </th>
+          <th class="text-center" *ngFor="let head of head" scope="col" style="width: auto;">{{head}}</th>
         </tr>
         </thead>
         <tbody>
-        <tr class="text-center" *ngFor="let body of body">
-          <td style="width: 200px;">{{body.image}}</td>
-          <td class="text-left">{{body.name}}
+        <tr class="text-center" *ngFor="let product_list of cart.product_list">
+          <td style="width: 200px;">{{product_list.name}}</td>
+          <td class="text-left">{{product_list.product_id}}
             <br>
-            <span><span style="font-weight: bold">Code:</span>{{body.product_code}}</span><br>
-            <span><span style="font-weight: bold">Color:</span>{{body.color}}</span></td>
+            <span><span style="font-weight: bold">Code:</span>{{product_list.product_code}}</span><br>
+            <span><span style="font-weight: bold">Color:</span>{{product_list.color}}</span></td>
           <td class="text-left" style="width: 200px;">
             <div class="qty "><span class="minus bg-dark">-</span>
-              <input type="number" class="count" name="qty" value="{{body.qty}}">
+              <input *ngModel="product_list.qty" type="text" class="count" name="qty" value="">
               <span class="plus bg-dark">+</span></div>
           </td>
-          <td>{{body.unit_price}}</td>
-          <td>{{body.qty_price}}</td>
-          <td class="text-center p-lg-11">
-<!--            <button type="button" class="btn btn-success" (click)="getNavigation('view', product.p_id)">View</button>-->
-<!--            <button type="button" class="btn btn-warning" (click)="getNavigation('update', product.p_id)">Edit</button>-->
-<!--            <button type="button" class="btn btn-danger">Delete</button></td>-->
+          <td [(ngModel)]="product_list.sale_price"></td>
+          <td [(ngModel)]="product_list.qtyPrice"></td>
+          <td class="text-center p-11" style="padding: 10px" *ngIf="Show">
+            <button type="button" class="btn btn-warning" style="margin-right: 10px;font-size: 20px ">Edit</button>
+            <button type="button" class="btn btn-danger" style="margin-right: 10px;font-size: 20px">Delete</button>
+          </td>
         </tr>
         <tr>
           <td></td>
@@ -38,7 +38,7 @@
           <td></td>
           <td></td>
           <td>Sub-Total</td>
-          <td class="text-center"></td>
+          <td class="text-center">{{pro}</td>
         </tr>
         <tr>
           <td></td>
@@ -46,7 +46,7 @@
           <td></td>
           <td></td>
           <td>Shipping</td>
-          <td class="text-center"></td>
+          <td class="text-center">cdcedcedc</td>
         </tr>
         <tr>
           <td></td>
@@ -54,7 +54,7 @@
           <td></td>
           <td></td>
           <td></td>
-          <td class="text-center"></td>
+          <td class="text-center">vfevfvfvfw</td>
         </tr>
         <tr>
           <td></td>
@@ -62,23 +62,27 @@
           <td></td>
           <td></td>
           <td><strong>Total</strong></td>
-          <td class="text-center"><strong></strong></td>
+          <td class="text-center"><strong>frvfvfffvrv</strong></td>
         </tr>
         </tbody>
       </table>
     </div>
-  </div>
-  <div class="col-sm-12">
+    <div class="row"></div>
     <div class="row">
+      <div class="  col-2">
+        <button class="btn btn-block btn-light" (click)="onClick()"
+                style="font-size: 25px;background-color: black;color: white">Edit & Save
+        </button>
+      </div>
       <div class="  col-4"></div>
-      <div class="  col-4">
-        <button class="btn btn-block btn-light" style="font-size: 25px;background-color: black;color: white">Continue
+      <div class="  col-3">
+        <button class="btn btn-block btn-light" style="font-size: 25px;background-color: black;color: white"  [routerLink]="['/home']">Continue
           Shopping
         </button>
       </div>
-      <div class="col-4 ">
+      <div class="col-3">
         <button class="btn btn-lg btn-block text-uppercase"
-                style="font-size: 25px; background-color: black;color: white">Buy Now
+                style="font-size: 25px; background-color: black;color: white" [routerLink]="['/payment']">Buy Now
         </button>
       </div>
     </div>

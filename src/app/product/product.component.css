@@ -1,3 +1,6 @@
+body,html{
+  max-height: 100vh;
+}
 .o-1 {
   background-color: chartreuse;
   width: 270px;

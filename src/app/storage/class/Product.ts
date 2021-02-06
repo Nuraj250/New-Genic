@@ -1,4 +1,7 @@
 export class Product {
+  // static find(arg0: (product: any) => boolean): any {
+  //     throw new Error('Method not implemented.');
+  // }
   item_id: number | undefined;
   product_code: string | undefined;
   name: string | undefined;
@@ -12,7 +15,7 @@ export class Product {
   sale_price: string | undefined;
   retail_price: string | undefined;
   added_date: number | undefined;
-  image: object|undefined;
+  image: string[]|undefined;
 }
 
 

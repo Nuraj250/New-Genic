@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {ProductService} from '../service/product.service';
 
@@ -9,19 +9,18 @@ import {ProductService} from '../service/product.service';
 })
 export class ProductComponent implements OnInit {
 
-  constructor(private router: Router, private productService: ProductService) { }
+  constructor(private router: Router, private productService: ProductService) {
+  }
 
   ngOnInit(): void {
-    this.getData();
+
+    this.loadProducts();  }
+
+  loadProducts() {
+    // this.productService.getCategory().subscribe(
+    //   productData => {
+    //     // this.products = productData;
+    //
+    //   }
   }
-  getData(): any {
-
-    // this.productService.get().subscribe(
-      // data => this.books = data,
-      // err => console.error(err),
-      // () => console.log('done loading books')
-    // );
-
-  }
-
 }

@@ -9,7 +9,7 @@ import {ProductCard} from '../../storage/class/product-card';
   styleUrls: ['./product-card.component.css']
 })
 export class ProductCardComponent implements OnInit {
-  product: any[] = [];
+  products: any[] | undefined;
   private id: string | undefined;
   isDisabled = false;
   isDisabled1=false;
@@ -23,9 +23,10 @@ export class ProductCardComponent implements OnInit {
     // this.cart = this.cartService.getCart();
   }
 
-  quickView(): Promise<any> {
+  quickView(id: string | undefined): Promise<any> {
+    this.id = id;
     return new Promise<any>(resolve => {
-      this.productService.getProductView(this.id).subscribe((res) => {
+      this.productService.getProductView(this.id).subscribe((resid) => {
 
       }, error => {
         console.log(error);

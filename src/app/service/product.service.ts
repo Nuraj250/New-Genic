@@ -4,6 +4,7 @@ import {Observable} from 'rxjs';
 import {Injectable} from '@angular/core';
 import {Product} from '../storage/class/Product';
 import {Category} from '../storage/class/Category';
+import {Cart} from '../storage/class/Cart';
 
 @Injectable({
   providedIn: 'root'
@@ -20,13 +21,15 @@ export class ProductService {
   }
 
   public getSubCategory(): Observable<Category[]> {
-    return this.http.get<Product[]> (this.basUrl + '/category/subCategoryProducts/{subCategoryid}');
+    return this.http.get<Category[]> (this.basUrl + '/category/subCategoryProducts/{subCategoryid}');
   }
 
   public getSubMainCategory(): Observable<Category[]>{
     return this.http.get<Category[]>(this.basUrl + '/category/mainSubCategoryProducts/{mainSubCategoryId}');
   }
-
+  public getRelatedProducts(): Observable<Product[]>{
+    return this.http.get<Product[]>(this.basUrl + ' /product/relatedProducts/{productId}');
+  }
   // public getFilter(): Observable<any> {
   //   return this.http.get(this.basUrl + '/category/mainSubCategoryProducts/{mainSubCategoryId}');
   // }
