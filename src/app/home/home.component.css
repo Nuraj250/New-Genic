@@ -208,7 +208,7 @@
   height: 80%;
   color: white;
   position: absolute;
-  top: 3700px;
+  top: 3655px;
   /*background-color: cyan;*/
 }
 
@@ -374,7 +374,7 @@ h6 {
 
 .shop > button {
   position: relative;
-  left: 110px;
+  left: 94px;
   font-size: 22px;
   width: 140px;
 }

@@ -1,7 +1,33 @@
-<div className="timer">
-  <h4> Count down timer </h4>
-  <span id="days"> {{daysToDday}} </span>Day(s)
-  <span id="hours"> {{hoursToDday}} </span>Hrs
-  <span id="minutes"> {{minutesToDday}} </span>Min
-  <span id="seconds"> {{secondsToDday}} </span>S
+<div class="wrapper" style="background-image: url('assets/bg-registration-form-1.jpg');">
+  <div class="inner">
+    <div class="image-holder">
+      <img src="assets/registration-form-1.jpg" alt="">
+    </div>
+    <form action="">
+      <h3>Registration Form</h3><br>
+      <div class="form-group">
+        <input type="text" placeholder="First Name" class="form-control">
+        <input type="text" placeholder="Last Name" class="form-control">
+      </div>
+      <div class="form-wrapper">
+        <input type="text" placeholder="Username" class="form-control">
+        <i class="zmdi zmdi-account"></i>
+      </div>
+      <div class="form-wrapper">
+        <input type="text" placeholder="Email Address" class="form-control">
+        <i class="zmdi zmdi-email"></i>
+      </div>
+      <div class="form-wrapper">
+        <input type="password" placeholder="Password" class="form-control">
+        <i class="zmdi zmdi-lock"></i>
+      </div>
+      <div class="form-wrapper">
+        <input type="password" placeholder="Confirm Password" class="form-control">
+        <i class="zmdi zmdi-lock"></i>
+      </div>
+      <button>Register
+        <i class="zmdi zmdi-arrow-right"></i>
+      </button>
+    </form>
+  </div>
 </div>

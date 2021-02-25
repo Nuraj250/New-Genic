@@ -44,33 +44,35 @@
       </li>
       <a class="nav-lin "
          id="navbarDropdownMenuLink5"
-         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  [routerLink]="['/gaming']">Gaming</a>
+         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" [routerLink]="['/gaming']">Gaming</a>
     </div>
-    <form class="d-flex text-right" style="position: absolute;top:30px; left: 1000px;margin-top: 5px; ">
-      <div class="nav navbar-nav nv" style="font-size: 24px;">
-        <li>
-          <div class="flexbox">
-            <div class="search">
-              <div>
-                <input type="text" placeholder="Search . . ." required>
-              </div>
-            </div>
+    <form class="d-flex text-right" style="position: absolute;top:30px; left: 1155px;margin-top: 5px; ">
+      <div class="nav navbar-nav " style="font-size: 24px;">
+        <li >
+          <div id="wrap">
+            <form action="" autocomplete="on">
+              <input  title="User" id="search" name="search" type="text"
+                     placeholder="Search" >
+              <input  class="fa fa-user-circle " id="search_submit" value="Rechercher" type="submit">
+              <i class="glyphicon glyphicon-search" style="color: white"></i>
+            </form>
           </div>
         </li>
         <li><a href="#" style="padding-right: 10px" data-placement="top">
           <span class="fa fa-user-circle fa-lg" title="User"></span> </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a href="#" style="padding-right: 10px">
-              <span class="glyphicon glyphicon-log-in">
+              <span class="glyphicon glyphicon-log-in" [routerLink]="['/login']">
               </span> Log in</a></li>
             <!--            <app-login id="openlogin"></app-login>-->
           </ul>
         </li>
-        <li><a style="padding-right: 20px"><span class="glyphicon glyphicon-shopping-cart fa-lg" title="Cart"
-                                                          [routerLink]="['/cart']"></span>
+        <li><a class="nv" style="padding-right: 20px"><span class="glyphicon glyphicon-shopping-cart fa-lg" title="Cart"
+                                                            style="width: fit-content"
+                                                            [routerLink]="['/cart']"></span>
         </a></li>
-        <li><a  style="padding-right: 20px"><span class="glyphicon glyphicon-heart fa-lg"
-                                                          title="WishList" [routerLink]="['/wishlist']"></span>
+        <li><a style="padding-right: 20px" [routerLink]="['/wishlist']"><span class="glyphicon glyphicon-heart fa-lg"
+                                                                              title="WishList"></span>
         </a></li>
         <li><a href="#" style="padding-right: 20px"><span class="glyphicon glyphicon-log-out fa-lg"
                                                           title="Logout"></span>
@@ -79,3 +81,4 @@
     </form>
   </div>
 </nav>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
