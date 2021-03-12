@@ -382,10 +382,9 @@ h6 {
 .btr {
   position: absolute;
   bottom: 60px;
-  right: 699px;
-  font-size: 20px;
+  right: 670px;
+  font-size: 25px;
   color: red;
   background-color: black;
   border: 2px solid #c01508;
-  text-shadow: 2px 2px 5px red;
 }

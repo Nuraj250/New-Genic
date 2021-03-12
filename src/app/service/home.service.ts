@@ -24,36 +24,42 @@ export class HomeService {
     return this.http.get(this.basUrl + '/x');
   }
 
-  // public getUserById(id: number): Observable<any> {
-  //   return this.http.get(this.basUrl + '/x1/' + id);
-  // }
+  public getUserById(id: number): Observable<any> {
+    return this.http.get(this.basUrl + '/x1/' + id);
+  }
 
 
   public getAllDetails():Observable<any> {
    return this.http.get(this.basUrl+'/category')
   }
 
-  // @ts-ignore
+
   public getViewAllOrder(): Observable<any> {
+    return this.http.get(this.basUrl+'/category')
   }
 
   // @ts-ignore
   public postFeedback(): Observable<any> {
+    return this.http.get(this.basUrl+'/category')
   }
 
   // @ts-ignore
   public getFeedback(): Observable<any> {
+    return this.http.get(this.basUrl+'/category')
   }
 
   // @ts-ignore
   public patchUpdateDetails(): Observable<any> {
+    return this.http.get(this.basUrl+'/category')
   }
 
   // @ts-ignore
   public patchUpdateProfilePicture(): Observable<any> {
+    return this.http.get(this.basUrl+'/category')
   }
 
   // @ts-ignore
   public postSignUp(): Observable<any> {
+    return this.http.get(this.basUrl+'/category')
   }
 }
